@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Employee Management System</h1>
+    <div class="filters">
+        <label for="department-filter">Filter by Department :</label>
+        <select name="" id="department-filter">
+            <option value="">--Select Department--</option>
+            <option value="hr">HR</option>
+            <option value="finance">Finance</option>
+            <option value="marketing">Marketing</option>
+            <option value="engineering">Engineering</option>
+            <option value="operation">Operation</option>
+        </select>
+        <label for="gender-filter">Filter By Gender :</label>
+        <select name="" id="gender-filter">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">--Female--</option>
+        </select>
+        <label for="salary-sort">Sort By sallary :</label>
+        <select name="" id="salary-sort">
+            <option value="">Select</option>
+            <option value="asc">Low to high</option>
+            <option value="desc">High to low</option>
+        </select>
+    </div>
+    <table id="employee-table">
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody id="employee-data"></tbody>
+    </table>
+    <div class="pagination">
+        <button id="prev-btn" disabled>Prev</button>
+        <button id="next-btn">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

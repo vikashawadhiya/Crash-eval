@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}
+label{
+    margin-right: 10px;
+}
+select{
+    padding: 2px;
+    margin-right: 10px;
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+}
+table, th,td {
+    border: 1px solid rgb(174, 167, 167);
+}    
+th {
+    background-color: rgb(234, 239, 244);
+}
+#pagination botton {
+    padding: 5px 15px;
+    margin-top: 0 8px;
+    cursor: pointer;
+    text-align: center;
+}
+#pagination button:disabled{
+    background-color: antiquewhite;
+    color: black;
+    cursor: default;
+}
